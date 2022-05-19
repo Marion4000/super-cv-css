@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("polices/Nunito-Bold.woff2") format("woff2"),
+    url("polices/Nunito-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("polices/SourceSerifPro-Regular.woff2") format("woff2"),
+    url("polices/SourceSerifPro-Regular.woff") format("woff");
+}
+
+/* Général */
+body {
+  font-family: "Source Serif Pro", serif;
+  background-color: rgba(173, 216, 230, 0.63);
+}
+
+h1,
+h2 {
+  font-family: "Nunito", sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+hr {
+  border: dashed 2px #ffbf58;
+}
+
+table,
+tr,
+td {
+  border: solid black 1px;
+  padding: 5px;
+}
+
+img {
+  width: 100px;
+}
+
+figcaption {
+  font-size: larger;
+  font-style: italic;
+}
+
+ul {
+  background: linear-gradient(to right, #050461, #0e09e0, #2724ff);
+}
+
+strong {
+  font-size: 30px;
+}
+em {
+  color: #ee9404;
+}
+div {
+  background: radial-gradient(#ad6b00, #e0a94f, #ffeac8);
+}
+
+/* Spécifique */
+div a {
+  color: aliceblue;
+}
+ul a {
+  text-decoration: underline;
+  color: white;
+}
+li strong {
+  color: #050461;
+  font-size: 20px;
+}
+
+/* Classes */
+.fondBleu {
+  background-color: #050394;
+  color: white;
+}
+.padding {
+  padding: 10px 0 10px 15px;
+}

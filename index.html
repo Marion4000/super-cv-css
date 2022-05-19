@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mon CV</title>
+  </head>
+  <body>
+    <!-- CONTACT -->
+    <p class="fondBleu padding">
+      Pesquet
+      <br />
+      Thomas
+      <br />
+      Adresse
+      <br />
+      Téléphone
+    </p>
+    <figure>
+      <img src="image/photo-cv.jpg" alt="une photo de moi" />
+      <figcaption>Une photo de moi</figcaption>
+    </figure>
+
+    <h1>Astronaute</h1>
+    <hr />
+    <!-- INTRO -->
+    <h2>Menu</h2>
+    <ul>
+      <li class="padding"><a href="#">Expériences professionnelles</a></li>
+      <li class="padding"><a href="#">Formation</a></li>
+      <li class="padding"><a href="#">Portfolio</a></li>
+      <li class="padding"><a href="#">Contact</a></li>
+    </ul>
+    <hr />
+    <p>
+      <strong>A propos : </strong> Lorem, <strong>ipsum</strong> dolor sit
+      <em>amet</em>
+      consectetur adipisicing elit. Similique alias, odit laborum iure illum ad.
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia,
+      repellendus!
+    </p>
+    <hr />
+    <!-- XP -->
+    <h2>Expériences professionnelles</h2>
+    <table>
+      <tr class="fondBleu">
+        <td>2016-2017</td>
+        <td>ISS</td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing.</td>
+      </tr>
+      <tr>
+        <td>2010-2015</td>
+        <td>Alternance ESA</td>
+        <td>Lorem ipsum dolor sit amet.</td>
+      </tr>
+      <tr>
+        <td>2000-2010</td>
+        <td>Stage ESA</td>
+        <td>Lorem ipsum, dolor sit amet consectetur adipisicing.</td>
+      </tr>
+    </table>
+    <hr />
+    <!-- FORMATIONS -->
+    <h2>Formation</h2>
+    <ol>
+      <li><strong>1999-2000</strong> : Doctorat astronomie</li>
+      <li><strong>1996-1999</strong> : Master astronomie</li>
+      <li><strong>1994-1996</strong> : Licence astronomie</li>
+      <li><strong>1991</strong> : Bac L option astrologie</li>
+    </ol>
+    <hr />
+    <!-- PORTFOLIO -->
+    <div>
+      <h2>Portfolio</h2>
+      <p>Je n'en ai pas, mais cette vidéo est vraiment très sympa</p>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/nGnX6GkrOgk"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <p>
+        Et voici un lien vers un super site internet : <a href="#">Cliquez</a>
+      </p>
+    </div>
+    <hr />
+    <!-- CONTACT -->
+    <h2>Contact</h2>
+
+    <form action="envoyermessage.php" method="post">
+      <fieldset>
+        <legend>Laissez-moi un message !</legend>
+        <label for="nom">
+          Nom
+          <br />
+          <input type="text" name="nom"
+        /></label>
+        <br />
+        <label for="email">
+          E-mail <br />
+          <input type="email" name="email" />
+        </label>
+        <br />
+        <label for="choix">
+          A quel point aimez-vous l'espace ?
+          <br />
+          <input type="radio" name="choix" id="choix" value="beaucoup" />
+          Beaucoup
+          <input
+            type="radio"
+            name="choix"
+            id="choix"
+            value="vraimentbeaucoup"
+            checked
+          />
+          Vraiment beaucoup !
+        </label>
+        <br />
+        <label for="message">
+          Votre message
+          <br />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Tapez votre message ici !"
+          ></textarea>
+        </label>
+        <br />
+        <input type="submit" name="valider" value="Envoyer" />
+      </fieldset>
+    </form>
+  </body>
+</html>
